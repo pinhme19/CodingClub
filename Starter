@@ -1,0 +1,17 @@
+import javax.swing.JFrame;
+
+public class TicTacToeStarter extends JFrame {
+    public TicTacToeStarter() {
+        add(new TicTacToeBoard());
+        setTitle("Tic Tac Toe");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(600,600);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        setResizable(false);
+    }
+
+    public static void main(String[] args) {
+        new TicTacToeStarter();
+    }
+}
